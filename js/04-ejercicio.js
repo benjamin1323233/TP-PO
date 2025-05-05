@@ -11,7 +11,7 @@ class productos {
     this.#nombre = nombrep;
     this.#precio = preciop;
   }
-mostrarDatos(){
+  mostrarDatos() {
     document.writeln(
       "<ul><li>el codigo del producto es : ",
       this.#codigo,
@@ -30,6 +30,7 @@ const harina = new productos(24854, "harina integral", 7000);
 listaProductos.unshift(sal);
 listaProductos.unshift(azucar);
 listaProductos.unshift(harina);
-console.log(listaProductos)
-for(let puesto = 0;puesto <= listaProductos.length;puesto++){
-  listaProductos[puesto].mostrarDatos();}
+console.log(listaProductos);
+for (let puesto = 0; puesto <= listaProductos.length; puesto++) {
+  listaProductos[puesto].mostrarDatos();
+}
